@@ -1,0 +1,6 @@
+                    Classifier | Accuracy
+         'K-nearest neighbors' |  98.72%
+'Decision tree classification' |  84.97%
+'Random forest classification' |  97.44%
+     'Support vector machines' |  99.05%
+       'Multilayer perceptron' |  97.83%

@@ -1,0 +1,6 @@
+                     Regressor |    MAE     MAPE   Pearson  Spearman
+           'Linear regression' |  0.14424  169.5%  0.53068  0.52371
+         'K-nearest neighbors' |  0.05550   35.9%  0.91193  0.90351
+    'Decision tree regression' |  0.00476    4.4%  0.99557  0.99434
+     'Support vector machines' |  0.09913   68.5%  0.76685  0.75740
+       'Multilayer perceptron' |  0.10003   81.7%  0.77102  0.75505
