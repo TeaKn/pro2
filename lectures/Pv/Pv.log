@@ -1,0 +1,98 @@
+       Graph | 'kera_bella'
+        Type | '0--1'
+       Nodes | 65,536 (2,868)
+       Edges | 145,194 (0)
+      Degree | 4.4310
+         LCC | 35.7% (4,557)
+        Time | 124.6 sec
+
+       Graph | 'kera_bella'
+        Type | '0--1'
+       Nodes | 65,536 (221)
+       Edges | 235,709 (0)
+      Degree | 7.1933
+         LCC | 98.7% (357)
+        Time | 148.1 sec
+
+       Graph | 'tom_jerry'
+        Type | '0--1'
+       Nodes | 49,152 (7,979)
+       Edges | 132,346 (0)
+      Degree | 5.3852
+         LCC | 17.7% (9,375)
+        Time | 96.1 sec
+
+       Graph | 'tom_jerry'
+        Type | '0--1'
+       Nodes | 49,152 (3,267)
+       Edges | 148,072 (0)
+      Degree | 6.0251
+         LCC | 18.5% (4,418)
+        Time | 99.2 sec
+
+       Graph | 'lora_bella'
+        Type | '0--1'
+       Nodes | 49,152 (2,507)
+       Edges | 111,900 (0)
+      Degree | 4.5532
+         LCC | 24.5% (3,754)
+        Time | 66.9 sec
+
+       Graph | 'lora_bella'
+        Type | '0--1'
+       Nodes | 49,152 (281)
+       Edges | 174,091 (0)
+      Degree | 7.0838
+         LCC | 97.9% (377)
+        Time | 82.2 sec
+
+       Graph | 'toy_shapes'
+        Type | '0--1'
+       Nodes | 43,776 (1,359)
+       Edges | 158,561 (0)
+      Degree | 7.2442
+         LCC | 48.0% (1,448)
+        Time | 96.1 sec
+
+       Graph | 'toy_shapes'
+        Type | '0--1'
+       Nodes | 43,776 (568)
+       Edges | 160,764 (0)
+      Degree | 7.3448
+         LCC | 54.1% (624)
+        Time | 82.3 sec
+
+       Graph | 'fmf_logo'
+        Type | '0--1'
+       Nodes | 41,984 (1,920)
+       Edges | 148,150 (0)
+      Degree | 7.0575
+         LCC | 85.9% (2,460)
+        Time | 73.4 sec
+
+       Graph | 'fmf_logo'
+        Type | '0--1'
+       Nodes | 41,984 (897)
+       Edges | 152,091 (0)
+      Degree | 7.2452
+         LCC | 88.4% (1,342)
+        Time | 76.1 sec
+
+       Graph | 'lovro_subelj'
+        Type | '0--1'
+       Nodes | 43,520 (3,212)
+       Edges | 128,378 (0)
+      Degree | 5.8997
+         LCC | 65.1% (4,397)
+        Time | 68.2 sec
+
+       Graph | 'lovro_subelj'
+        Type | '0--1'
+       Nodes | 43,520 (675)
+       Edges | 153,241 (0)
+      Degree | 7.0423
+         LCC | 93.7% (925)
+        Time | 67.2 sec
+
+        Time | 1687.1 sec
+
