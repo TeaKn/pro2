@@ -1,0 +1,100 @@
+       Graph | 'demo'
+        Type | 'x==y'
+       Nodes | 4 (1)
+       Edges | 3 (0)
+      Degree | 1.5000
+    Distance | 0.88 (2)
+         LCC | 75.0% (2)
+           C | 0.0000
+        Time | 0.0 sec
+
+       Graph | 'G(n,p)'
+        Type | '0--1'
+       Nodes | 1,000 (6)
+       Edges | 2,509 (0)
+      Degree | 5.0180
+    Distance | 4.40 (8)
+         LCC | 99.4% (7)
+           C | 0.0029
+        Time | 0.8 sec
+
+       Graph | 'G(n,m)'
+        Type | '0==1'
+       Nodes | 1,000 (6)
+       Edges | 2,500 (3)
+      Degree | 5.0000
+    Distance | 4.42 (9)
+         LCC | 99.4% (7)
+           C | 0.0070
+        Time | 0.8 sec
+
+       Graph | 'G(n,k)'
+        Type | '0==1'
+       Nodes | 1,000 (9)
+       Edges | 2,500 (1)
+      Degree | 5.0000
+    Distance | 4.36 (8)
+         LCC | 99.1% (10)
+           C | 0.0046
+        Time | 0.9 sec
+
+       Graph | 'karate_club'
+        Type | 'x--y'
+       Nodes | 34 (0)
+       Edges | 78 (0)
+      Degree | 4.5882
+    Distance | 2.40 (5)
+         LCC | 100.0% (1)
+           C | 0.5706
+        Time | 0.0 sec
+
+       Graph | 'dolphins'
+        Type | 'x--y'
+       Nodes | 62 (0)
+       Edges | 159 (0)
+      Degree | 5.1290
+    Distance | 3.34 (8)
+         LCC | 100.0% (1)
+           C | 0.2590
+        Time | 0.0 sec
+
+       Graph | 'football'
+        Type | 'x==y'
+       Nodes | 115 (0)
+       Edges | 616 (0)
+      Degree | 10.7130
+    Distance | 2.50 (4)
+         LCC | 100.0% (1)
+           C | 0.4032
+        Time | 0.0 sec
+
+       Graph | 'highways'
+        Type | 'x--y'
+       Nodes | 124 (0)
+       Edges | 125 (0)
+      Degree | 2.0161
+    Distance | 22.92 (60)
+         LCC | 100.0% (1)
+           C | 0.0000
+        Time | 0.0 sec
+
+       Graph | 'facebook'
+        Type | 'x--y'
+       Nodes | 10,680 (0)
+       Edges | 24,316 (0)
+      Degree | 4.5536
+    Distance | 7.49 (24)
+         LCC | 100.0% (1)
+           C | 0.2659
+        Time | 116.6 sec
+
+       Graph | 'java'
+        Type | 'x==y'
+       Nodes | 2,378 (0)
+       Edges | 14,727 (0)
+      Degree | 12.3860
+    Distance | 2.13 (5)
+         LCC | 100.0% (1)
+           C | 0.7152
+        Time | 10.7 sec
+
