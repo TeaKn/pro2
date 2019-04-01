@@ -19,3 +19,4 @@
 14 | 21. maj | | $\uparrow$ preostale vsebine | Predstavitev _Java_ projekta | Oddaja _Java_ projekta |
  | | | | | |
 15 | 28. maj | Alternativni programski jeziki, tehnologije in orodja | C/C++, Prolog, R, MATLAB, HTML & CSS, JavaScript & jQuery, Bootstrap, SQL, LaTeX, Markdown itd. | Ponovitev in priprava na pisni izpit | |
+
