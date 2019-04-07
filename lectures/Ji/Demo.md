@@ -1,3 +1,4 @@
+```java
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Di {
+public class Demo {
 
   public static void main(String[] args) {
     System.out.println("Let's do Java!");
@@ -167,6 +168,22 @@ public class Di {
     } catch (IOException e) {
       e.printStackTrace();
     }
+    
+    XY[] points = new XY[3];
+    points[0] = new XY(0, 1);
+    points[1] = new XYZ(0, 1);
+    points[2] = new XYZ(0, 1, 2);
+    
+    for (XY point: points)
+      System.out.println(point);
+    
+    Domestic dog = new Dog();
+    System.out.println(dog.say());
+    System.out.println(dog.friendly());
+    
+    Domestic cat = new Cat();
+    System.out.println(cat.say());
+    System.out.println(cat.friendly());
   }
 
   public static int gcd(int a, int b) {
@@ -192,3 +209,102 @@ public class Di {
   }
   
 }
+
+class XY {
+  
+  private int x;
+  
+  private int y;
+
+  public XY(int x, int y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  public int getX() {
+    return x;
+  }
+
+  public int getY() {
+    return y;
+  }
+
+  @Override
+  public String toString() {
+    return "x = " + getX() + ", y = " + getY();
+  }
+  
+}
+
+class XYZ extends XY {
+
+  private int z;
+  
+  public XYZ(int x, int y) {
+    this(x, y, 0);
+  }
+  
+  public XYZ(int x, int y, int z) {
+    super(x, y);
+    this.z = z;
+  }
+
+  public int getZ() {
+    return z;
+  }
+  
+  @Override
+  public String toString() {
+    return super.toString() + ", z = " + getZ();
+  }
+  
+}
+
+interface Animal {
+  
+  public String say();
+  
+}
+
+interface Domestic extends Animal {
+  
+  public boolean friendly();
+  
+}
+
+class Dog implements Domestic {
+
+  public Dog() {
+    super();
+  }
+
+  @Override
+  public String say() {
+    return "Bark! Bark!";
+  }
+
+  @Override
+  public boolean friendly() {
+    return true;
+  }
+  
+}
+
+class Cat implements Domestic {
+
+  public Cat() {
+    super();
+  }
+
+  @Override
+  public String say() {
+    return "Meow! Meow!";
+  }
+  
+  @Override
+  public boolean friendly() {
+    return false;
+  }
+  
+}
+```

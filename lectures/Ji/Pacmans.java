@@ -5,21 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Ji {
-
-  public static void main(String[] args) {
-    int board = args.length > 0? Integer.parseInt(args[0]): 24;
-    int pacmans = args.length > 1? Integer.parseInt(args[1]): 6;
-    
-    try {
-      new Pacmans(board, pacmans).playPacmans();
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
-  }
-
-}
-
 class Position {
   
   private int x;
@@ -315,7 +300,11 @@ class Board {
 
 }
 
-class Pacmans {
+public class Pacmans {
+  
+  public static final int BOARD_SIZE = 24;
+  
+  public static final int PACMANS_NUMBER = 6;
   
   public static final int BIG_COIN_VALUE = 9;
   
@@ -465,6 +454,17 @@ class Pacmans {
       coins = " " + coins + " ";
     
     return "\n" + board + "\n" + pacmans + "\n" + coins;
+  }
+  
+  public static void main(String[] args) {
+    int board = args.length > 0? Integer.parseInt(args[0]): BOARD_SIZE;
+    int pacmans = args.length > 1? Integer.parseInt(args[1]): PACMANS_NUMBER;
+    
+    try {
+      new Pacmans(board, pacmans).playPacmans();
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
   }
   
 }
