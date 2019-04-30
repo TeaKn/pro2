@@ -243,7 +243,8 @@ class GUI extends JFrame {
       
       @Override
       public void actionPerformed(ActionEvent e) {
-        quoridor.reset(true);
+        if (!quoridor.isFinished())
+          quoridor.reset(true);
         quoridor.draw();
       }
       
@@ -256,7 +257,8 @@ class GUI extends JFrame {
       
       @Override
       public void actionPerformed(ActionEvent e) {
-        quoridor.reset(false);
+        if (!quoridor.isFinished())
+          quoridor.reset(false);
         quoridor.draw();
       }
       
