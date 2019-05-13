@@ -35,9 +35,11 @@ public class Quoridor {
   
   protected static final long GAME_SLEEP = 100L;
   
-  protected static final long MOVE_SLEEP = 1000L;
+  protected static final long MOVE_SLEEP = 500L;
   
-  protected static final double MOVE_PROBABILITY = 0.66;
+  protected static final double MOVE_PROBABILITY = 0.75;
+  
+  protected static Strategy MOVE_STRATEGY = Strategy.BEST;
   
   private boolean first;
   
@@ -122,15 +124,17 @@ public class Quoridor {
   public void play() {
     while (true) {
       if (getPlayer() instanceof AI && isRunning() && !isFinished()) {
+        AI player = (AI)getPlayer();
+        
         try {
           Thread.sleep(MOVE_SLEEP);
         } catch (InterruptedException e) {
 
         }
         
-        AI player = (AI)getPlayer();
         if (player.getWalls() == 0 || Math.random() < MOVE_PROBABILITY || !player.wall(this))
-          player.move(this);
+          if (!player.move(this) && player.getWalls() > 0)
+            player.wall(this);
         if (player.hasWon())
           setFinished();
         nextPlayer();
@@ -167,7 +171,7 @@ public class Quoridor {
     walls = new TreeSet<Wall>();
   }
   
-  public void reinit(boolean first) {
+  public void toggle(boolean first) {
     players[first? 0: 1] = players[first? 0: 1] instanceof AI? new Player(players[first? 0: 1]): new AI(players[first? 0: 1]);
   }
   
@@ -235,7 +239,6 @@ class GUI extends JFrame {
       menu.addSeparator();
     
       item = new JMenuItem("Save");
-      item.setAccelerator(KeyStroke.getKeyStroke('S', Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
       item.setIcon(UIManager.getIcon("FileView.hardDriveIcon"));
       item.setEnabled(false);
       menu.add(item);
@@ -288,24 +291,8 @@ class GUI extends JFrame {
       menu.addSeparator();
     
       for (Player player: quoridor.getPlayers()) {
-        item = new JMenuItem("Toggle " + player.getName());
-        item.addActionListener(new ActionListener() {
-
-          @Override
-          public void actionPerformed(ActionEvent e) {
-            quoridor.reinit(player.isFirst());
-            quoridor.draw();
-          }
-
-        });
-        menu.add(item);
-      }
-    
-      menu.addSeparator();
-    
-      for (Player player: quoridor.getPlayers()) {
         item = new JMenuItem("Reset " + player.getName());
-        item.setAccelerator(KeyStroke.getKeyStroke(player.getName().charAt(0), ActionEvent.SHIFT_MASK));
+        item.setAccelerator(KeyStroke.getKeyStroke(player.getName().charAt(0), ActionEvent.ALT_MASK + ActionEvent.SHIFT_MASK));
         item.addActionListener(new ActionListener() {
 
           @Override
@@ -348,12 +335,79 @@ class GUI extends JFrame {
       menu.add(item);
     
       item = new JMenuItem("Reset AI");
-      item.setEnabled(false);
+      item.addActionListener(new ActionListener() {
+      
+      @Override
+      @SuppressWarnings("static-access")
+      public void actionPerformed(ActionEvent e) {
+        quoridor.MOVE_STRATEGY = Strategy.BEST;
+          quoridor.draw();
+      }
+      
+    });
       menu.add(item);
     
-      menu = new JMenu("Other");
-      menu.setEnabled(false);
+      menu = new JMenu("AI");
       bar.add(menu);
+    
+      for (Player player: quoridor.getPlayers()) {
+        item = new JMenuItem("Toggle " + player.getName());
+        item.setAccelerator(KeyStroke.getKeyStroke(player.getName().charAt(0), ActionEvent.SHIFT_MASK));
+        item.addActionListener(new ActionListener() {
+
+          @Override
+          public void actionPerformed(ActionEvent e) {
+            quoridor.toggle(player.isFirst());
+            quoridor.draw();
+          }
+
+        });
+        menu.add(item);
+      }
+    
+      menu.addSeparator();
+    
+      item = new JMenuItem("Random AI");
+      item.setAccelerator(KeyStroke.getKeyStroke('R', ActionEvent.ALT_MASK));
+      item.addActionListener(new ActionListener() {
+
+        @Override
+        @SuppressWarnings("static-access")
+        public void actionPerformed(ActionEvent e) {
+          quoridor.MOVE_STRATEGY = Strategy.RANDOM;
+          quoridor.draw();
+        }
+
+      });
+      menu.add(item);
+    
+      item = new JMenuItem("Average AI");
+      item.setAccelerator(KeyStroke.getKeyStroke('A', ActionEvent.ALT_MASK));
+      item.addActionListener(new ActionListener() {
+
+        @Override
+        @SuppressWarnings("static-access")
+        public void actionPerformed(ActionEvent e) {
+          quoridor.MOVE_STRATEGY = Strategy.AVERAGE;
+          quoridor.draw();
+        }
+
+      });
+      menu.add(item);
+    
+      item = new JMenuItem("Best AI");
+      item.setAccelerator(KeyStroke.getKeyStroke('B', ActionEvent.ALT_MASK));
+      item.addActionListener(new ActionListener() {
+
+        @Override
+        @SuppressWarnings("static-access")
+        public void actionPerformed(ActionEvent e) {
+          quoridor.MOVE_STRATEGY = Strategy.BEST;
+          quoridor.draw();
+        }
+
+      });
+      menu.add(item);
     
       bar.add(new JMenu("Help"));
     
@@ -780,7 +834,24 @@ class AI extends Player {
     if (moves.isEmpty())
       return false;
     
-    Move move = moves.get((int)(Math.random() * moves.size()));
+    Graph graph = quoridor.getGraph();
+
+    Move move = moves.get(0);
+    switch (Quoridor.MOVE_STRATEGY) {
+    case BEST:
+      for (int i = 1; i < moves.size(); i++)
+        if (graph.minDistance(this, moves.get(i)) < graph.minDistance(this, move))
+          move = moves.get(i);
+      break;
+    case AVERAGE:
+      for (int i = 1; i < moves.size(); i++)
+        if (graph.avgDistance(this, moves.get(i)) < graph.avgDistance(this, move))
+          move = moves.get(i);
+      break;
+    case RANDOM: default:
+      move = moves.get((int)(Math.random() * moves.size()));
+      break;
+    }
     
     setX(move.getX());
     setY(move.getY());
@@ -805,8 +876,23 @@ class AI extends Player {
     
     if (walls.isEmpty())
       return false;
-    
-    Wall wall = walls.get((int)(Math.random() * walls.size()));
+
+    Wall wall = walls.get(0);
+    switch (Quoridor.MOVE_STRATEGY) {
+    case BEST:
+      for (int i = 1; i < walls.size(); i++)
+        if (quoridor.getGraph(walls.get(i)).minDistance(quoridor.getOther()) > quoridor.getGraph(wall).minDistance(quoridor.getOther()))
+          wall = walls.get(i);
+      break;
+    case AVERAGE:
+      for (int i = 1; i < walls.size(); i++)
+        if (quoridor.getGraph(walls.get(i)).avgDistance(quoridor.getOther()) > quoridor.getGraph(wall).avgDistance(quoridor.getOther()))
+          wall = walls.get(i);
+      break;
+    case RANDOM: default:
+      wall = walls.get((int)(Math.random() * walls.size()));
+      break;
+    }
     
     quoridor.getWalls().add(wall);
     removeWall();
@@ -909,6 +995,72 @@ class Graph {
     
     return LCC == 81;
   }
+  
+  public int minDistance(Player player) {
+    return minDistance(player, getDistances(player.getX(), player.getY()));
+  }
+  
+  public int minDistance(Player player, Move move) {
+    return minDistance(player, getDistances(move.getX(), move.getY()));
+  }
+  
+  public int minDistance(Player player, int[] distances) {
+    int distance = Integer.MAX_VALUE;
+    for (int i = player.isFirst()? 72: 0; i < (player.isFirst()? 81: 9); i++)
+      if (distances[i] < distance)
+        distance = distances[i];
+    
+    return distance;
+  }
+  
+  public double avgDistance(Player player) {
+    return avgDistance(player, getDistances(player.getX(), player.getY()));
+  }
+  
+  public double avgDistance(Player player, Move move) {
+    return avgDistance(player, getDistances(move.getX(), move.getY()));
+  }
+  
+  public double avgDistance(Player player, int[] distances) {
+    int distance = 0;
+    for (int i = player.isFirst()? 72: 0; i < (player.isFirst()? 81: 9); i++)
+      distance += distances[i];
+    
+    return distance / 9.0;
+  }
+  
+  public int[] getDistances(int x, int y) {
+    return getDistances(9 * y + x);
+  }
+  
+  public int[] getDistances(int i) {
+    int[] distances = new int[81];
+    for (int j = 0; j < 81; j++)
+      distances[j] = -1;
+    List<Integer> queue = new LinkedList<Integer>();
+    
+    distances[i] = 0;
+    queue.add(i);
+    
+    while (!queue.isEmpty()) {
+      i = queue.remove(0);
+      
+      for (int j: getNeighbors(i))
+        if (distances[j] == -1) {
+          distances[j] = distances[i] + 1;
+          queue.add(j);
+        }
+    }
+    
+    return distances;
+  }
+
+}
+
+enum Strategy {
+  RANDOM,
+  AVERAGE,
+  BEST
 
 }
 ```
