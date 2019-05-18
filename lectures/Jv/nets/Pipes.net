@@ -1,0 +1,157 @@
+*vertices 78
+1 "Anže"
+2 "Radeče"
+3 "Batuje"
+4 "Šempeter pri Gorici"
+5 "Brestanica"
+6 "Krško"
+7 "Celje"
+8 "Laško"
+9 "Dolenje"
+10 "Ajdovščina"
+11 "Gomilsko"
+12 "Prebold"
+13 "Polzela"
+14 "Trojane"
+15 "Gornja Radgona"
+16 "Križevci pri Ljutomeru"
+17 "Gotovlje"
+18 "Velenje"
+19 "Ločica pri Savinji"
+20 "Kidričevo"
+21 "Slovenska Bistrica"
+22 "Maribor"
+23 "Tlake"
+24 "Koračice"
+25 "Lendava"
+26 "Omrož"
+27 "Kotlje"
+28 "Ravne na Koroškem"
+29 "Kovor"
+30 "Tržič"
+31 "Golnik"
+32 "Kranj"
+33 "Škofja Loka"
+34 "Ljubno"
+35 "Murska Sobota"
+36 "Videm"
+37 "Novo mesto"
+38 "Zapuže"
+39 "Šempeter"
+40 "Logatec"
+41 "Vipava"
+42 "Lopata"
+43 "Žalec"
+44 "Lukovica"
+45 "Kresnice"
+46 "Radomlje"
+47 "Bohova"
+48 "Selnica"
+49 "Mestinje"
+50 "Slovenjske Konjice"
+51 "Primož pri Šentjurju"
+52 "Šoštanj"
+53 "Preserje"
+54 "Mengeš"
+55 "Kamnik"
+56 "Vodice"
+57 "Šentjur"
+58 "Proseniško"
+59 "Prnek"
+60 "Rogaška Slatina"
+61 "Topole"
+62 "Ljubečna"
+63 "Trnovlje pri Celju"
+64 "Domžale"
+65 "Radovljica"
+66 "Bled"
+67 "Ceršak"
+68 "Sladkogorska"
+69 "Zreče"
+70 "Stari trg"
+71 "Slovenj Gradec"
+72 "Volčja Draga"
+73 "Anhovo"
+74 "Hrastnik"
+75 "Vrhnika"
+76 "Ljubljana"
+77 "Begunje"
+78 "Jesenice"
+*edges 77
+5 1
+1 2
+9 3
+3 4
+61 5
+5 6
+63 7
+7 8
+41 9
+9 10
+19 11
+11 12
+11 13
+11 14
+15 16
+42 17
+17 18
+17 19
+24 20
+20 21
+20 22
+20 23
+16 24
+24 25
+24 26
+70 27
+27 28
+34 29
+29 30
+29 31
+56 32
+32 33
+32 34
+16 35
+6 36
+6 37
+34 38
+19 39
+75 40
+40 41
+63 42
+42 43
+14 44
+44 45
+44 46
+22 47
+22 48
+61 49
+49 50
+49 51
+13 52
+46 53
+53 54
+53 55
+53 56
+51 57
+51 58
+23 59
+59 60
+59 61
+58 62
+58 63
+46 64
+38 65
+65 66
+48 67
+48 68
+21 69
+18 70
+70 71
+4 72
+4 73
+14 74
+56 75
+56 76
+38 77
+38 78
