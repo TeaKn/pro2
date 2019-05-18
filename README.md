@@ -22,4 +22,4 @@ Earlier Python code and materials require [Python 2.7](https://www.python.org/do
 
 Python code and materials assume that the following modules are installed: [httplib](https://docs.python.org/3/library/http.client.html), [requests](http://docs.python-requests.org/en/master/), [scikit-learn](https://scikit-learn.org/stable/), [matplotlib](https://matplotlib.org), [tweepy](http://www.tweepy.org), [numpy](http://www.numpy.org) and [scipy](https://www.scipy.org).
 
-Java code and materials do not assume any additional libraries.
+Java code and materials assume that the following libraries are present: [VectorGraphics2D](http://trac.erichseifert.de/vectorgraphics2d/).
