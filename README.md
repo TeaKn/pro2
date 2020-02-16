@@ -6,7 +6,7 @@ This repository contains lectures and labs materials for the programming course 
 
 The contents of different folders included in the repository are as follows:
 
-+ `syllabus` contains tentative course syllabus for the current academic year 2018/19;
++ `syllabus` contains tentative course syllabus for the current academic year 2019/20;
 + `lectures` contains course lectures code, handouts and other materials for programming languages Python (i.e. basic data analyses) and Java (i.e. graphical interfaces and games):
 	+ Python lectures are included in subfolders `Px`, where `x` is a roman numeral within `[i,vi]` and
 	+ Java lectures are included in subfolders `Jx`, where `x` is a roman numeral within `[i,vi]`;
