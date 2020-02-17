@@ -1,0 +1,42 @@
+       Graph | 'demo'
+        Type | 'x==y'
+       Nodes | 4
+       Edges | 3
+      Degree | 1.5000
+   Component | 75.0% (2)
+
+       Graph | 'G(n,p)'
+        Type | '0--1'
+       Nodes | 500
+       Edges | 1,294
+      Degree | 5.1760
+   Component | 99.6% (3)
+
+       Graph | 'G(n,m)'
+        Type | '0==1'
+       Nodes | 500
+       Edges | 1,250
+      Degree | 5.0000
+   Component | 99.8% (2)
+
+       Graph | 'karate_club'
+        Type | '0--1'
+       Nodes | 34
+       Edges | 78
+      Degree | 4.5882
+   Component | 100.0% (1)
+
+       Graph | 'world_wars'
+        Type | 'x--y'
+       Nodes | 106
+       Edges | 147
+      Degree | 2.7736
+   Component | 80.2% (9)
+
+       Graph | 'slo_highways'
+        Type | 'x--y'
+       Nodes | 124
+       Edges | 125
+      Degree | 2.0161
+   Component | 100.0% (1)
+
