@@ -18,8 +18,8 @@ The contents of different folders included in the repository are as follows:
 
 #### Languages and dependencies
 
-Python code and materials require either [Python 2.7](https://www.python.org/download/releases/2.7/) or [Python 3.7](https://www.python.org/downloads/release/python-370/). Java code and materials require [Java 8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html) or later.
+Python code and materials require either [Python 3.7](https://www.python.org/downloads/release/python-370/) or later. Java code and materials require [Java 8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html) or later.
 
-Python code and materials assume that the following modules are installed: [httplib](https://docs.python.org/3/library/http.client.html), [requests](http://docs.python-requests.org/en/master/), [scikit-learn](https://scikit-learn.org/stable/), [matplotlib](https://matplotlib.org), [tweepy](http://www.tweepy.org), [numpy](http://www.numpy.org) and [scipy](https://www.scipy.org).
+Python code and materials assume that the following modules are installed: [http.client](https://docs.python.org/3/library/http.client.html), [requests](http://docs.python-requests.org/en/master/), [scikit-learn](https://scikit-learn.org/stable/), [matplotlib](https://matplotlib.org), [tweepy](http://www.tweepy.org), [numpy](http://www.numpy.org) and [scipy](https://www.scipy.org).
 
 Java code and materials assume that the following libraries are present: [VectorGraphics2D](http://trac.erichseifert.de/vectorgraphics2d/).
