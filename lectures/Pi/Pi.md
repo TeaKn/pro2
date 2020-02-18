@@ -1,4 +1,4 @@
-###### Programiranje 2 2019/20 (P1)
+###### Programiranje 2 2019/20 (Pi)
 
 ## Uvod v programska jezika Python in Java
 
@@ -91,7 +91,7 @@ else
 
 ### Iterativno izvajanje in programske zanke
 
-Programske zanke omogočajo **ponovljeno izvajanje** programske kode dokler velja določen logičen pogoj. Najpogosteje se uporabljajo standardni pogojni stavki (tj. `for` in `while` zanke), dočim v večini programskih jezikih obstajajo tudi npr. `do while` zanke in druge. Vse zanke je moč gnezditi ipd.
+Programske zanke omogočajo **ponovljeno izvajanje** programske kode dokler velja določen logičen pogoj. Najpogosteje se uporabljajo standardne zanke (tj. `for` in `while` zanke), dočim v večini programskih jezikih obstajajo tudi npr. `do while` zanke in druge. Vse zanke je moč gnezditi ipd.
 
 V programskem jeziku **Python `for` zanko** zapišemo kot je prikazano spodaj.
 
