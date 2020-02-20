@@ -1,0 +1,72 @@
+       Graph | 'demo'
+        Type | 'x==y'
+       Nodes | 4
+       Edges | 3
+      Degree | 1.5000
+   Component | 75.0% (2)
+        Time | 0.0 sec
+
+       Graph | 'G(n,p)'
+        Type | '0--1'
+       Nodes | 1,000
+       Edges | 2,544
+      Degree | 5.0880
+   Component | 99.4% (7)
+        Time | 0.0 sec
+
+       Graph | 'G(n,m)'
+        Type | '0==1'
+       Nodes | 1,000
+       Edges | 2,500
+      Degree | 5.0000
+   Component | 98.9% (12)
+        Time | 0.0 sec
+
+       Graph | 'karate_club'
+        Type | 'x--y'
+       Nodes | 34
+       Edges | 78
+      Degree | 4.5882
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'dolphins'
+        Type | 'x--y'
+       Nodes | 62
+       Edges | 159
+      Degree | 5.1290
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'football'
+        Type | 'x==y'
+       Nodes | 115
+       Edges | 616
+      Degree | 10.7130
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'highways'
+        Type | 'x--y'
+       Nodes | 124
+       Edges | 125
+      Degree | 2.0161
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'facebook'
+        Type | 'x--y'
+       Nodes | 10,680
+       Edges | 24,316
+      Degree | 4.5536
+   Component | 100.0% (1)
+        Time | 2.8 sec
+
+       Graph | 'java'
+        Type | 'x==y'
+       Nodes | 2,378
+       Edges | 14,727
+      Degree | 12.3860
+   Component | 100.0% (1)
+        Time | 0.1 sec
+
