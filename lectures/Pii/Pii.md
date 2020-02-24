@@ -62,7 +62,7 @@ l.append(9.81)
 l.extend([0, 'baz'])
 ```
 
-V programskem jeziku **Python množico** določimo z zavitimi oklepaji `{...}` ali ukazom `set()` pri čimer ni potrebno, da so elementi množice enakega tipa. Seznam je **neurejena sprejemljiva zbirka** podatkov kar pomeni, da _lahko_ dodajamo ali brišemo elemente po vrednosti.
+V programskem jeziku **Python množico** določimo z zavitimi oklepaji `{...}` ali ukazom `set()` pri čimer ni potrebno, da so elementi množice enakega tipa. Množica je **neurejena sprejemljiva zbirka** podatkov kar pomeni, da _lahko_ dodajamo ali brišemo elemente po vrednosti.
 
 ```py
 s = {0, 1, 'foo', 'bar'}
@@ -203,7 +203,7 @@ else:
 	print(res.group())
 ```
 
-**Funkcija `search`** preveri ali niz znakov _vsebuje_ podani regularni izraz. Funkcija vrne `None`, če se niz ne vsebuje regularnega izraza, sicer pa objekt razreda `Match`, ki vrne ujemanje z uporabo funkcije `group`.
+**Funkcija `search`** preveri ali niz znakov _vsebuje_ podani regularni izraz. Funkcija vrne `None`, če niz ne vsebuje regularnega izraza, sicer pa objekt razreda `Match`, ki vrne ujemanje z uporabo funkcije `group`.
 
 ```py
 import re
