@@ -1,0 +1,64 @@
+       Graph | 'demo'
+        Type | 'x==y'
+       Nodes | 4 (0)
+       Edges | 4 (1)
+      Degree | 2.0000
+   Component | 75.0% (2)
+        Time | 0.0 sec
+
+       Graph | 'path'
+        Type | '0--1'
+       Nodes | 10 (0)
+       Edges | 9 (0)
+      Degree | 1.8000
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'cycle'
+        Type | '0--1'
+       Nodes | 10 (0)
+       Edges | 10 (0)
+      Degree | 2.0000
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'karate_club'
+        Type | 'x--y'
+       Nodes | 34 (0)
+       Edges | 78 (0)
+      Degree | 4.5882
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'dolphins'
+        Type | 'x--y'
+       Nodes | 62 (0)
+       Edges | 159 (0)
+      Degree | 5.1290
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'football'
+        Type | 'x==y'
+       Nodes | 115 (0)
+       Edges | 616 (0)
+      Degree | 10.7130
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'lovro_subelj'
+        Type | 'x==y'
+       Nodes | 11,053 (0)
+       Edges | 11,838 (0)
+      Degree | 2.1420
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+       Graph | 'imdb'
+        Type | 'x--y'
+       Nodes | 17,577 (0)
+       Edges | 287,074 (0)
+      Degree | 32.6647
+   Component | 99.3% (19)
+        Time | 0.3 sec
+
