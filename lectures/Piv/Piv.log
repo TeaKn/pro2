@@ -1,0 +1,235 @@
+       Graph | 'dolphins'
+        Type | 'x--y'
+       Nodes | 62 (0)
+       Edges | 159 (0)
+      Degree | 5.1290
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+                     Node | Degrees
+                   'Grin' | 1.935484e-01
+                    'SN4' | 1.774194e-01
+                'Topless' | 1.774194e-01
+                  'Scabs' | 1.612903e-01
+                'Trigger' | 1.612903e-01
+                    'Jet' | 1.451613e-01
+                'Kringel' | 1.451613e-01
+              'Patchback' | 1.451613e-01
+                    'Web' | 1.451613e-01
+             'Beescratch' | 1.290323e-01
+                     Time | 0.0 sec
+
+                     Node | Eigenvectors
+                   'Grin' | 5.610968e-02
+                    'SN4' | 5.340518e-02
+                'Topless' | 5.064097e-02
+                  'Scabs' | 4.994684e-02
+                   'TR99' | 3.868043e-02
+              'Patchback' | 3.762699e-02
+                'Trigger' | 3.743494e-02
+                   'Hook' | 3.695733e-02
+                    'SN9' | 3.693559e-02
+                  'MN105' | 3.684310e-02
+                     Time | 0.0 sec
+
+                     Node | PageRanks
+                   'Grin' | 3.214449e-02
+                    'Jet' | 3.172814e-02
+                'Trigger' | 3.129936e-02
+                    'Web' | 3.009537e-02
+                    'SN4' | 2.987534e-02
+                'Topless' | 2.951420e-02
+                  'Scabs' | 2.842307e-02
+              'Patchback' | 2.645855e-02
+               'Gallatin' | 2.615688e-02
+             'Beescratch' | 2.465072e-02
+                     Time | 0.0 sec
+
+       Graph | 'football'
+        Type | 'x==y'
+       Nodes | 115 (0)
+       Edges | 616 (0)
+      Degree | 10.7130
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+                     Node | Degrees
+           'Kansas State' | 1.130435e-01
+          'Brigham Young' | 1.043478e-01
+          'Florida State' | 1.043478e-01
+                   'Iowa' | 1.043478e-01
+             'Texas Tech' | 1.043478e-01
+             'Penn State' | 1.043478e-01
+    'Southern California' | 1.043478e-01
+              'Wisconsin' | 1.043478e-01
+                 'Auburn' | 1.043478e-01
+                'Florida' | 1.043478e-01
+                     Time | 0.0 sec
+
+                     Node | Eigenvectors
+                 'Nevada' | 1.179169e-02
+     'Southern Methodist' | 1.137954e-02
+           'Kansas State' | 1.137128e-02
+                  'Tulsa' | 1.127991e-02
+                   'Iowa' | 1.112924e-02
+         'San Jose State' | 1.110212e-02
+    'Southern California' | 1.106424e-02
+           'Fresno State' | 1.102942e-02
+                   'Rice' | 1.097027e-02
+               'Oklahoma' | 1.094485e-02
+                     Time | 0.0 sec
+
+                     Node | PageRanks
+           'Kansas State' | 1.023166e-02
+                'Florida' | 9.656604e-03
+                 'Auburn' | 9.641367e-03
+             'Texas Tech' | 9.618546e-03
+          'Florida State' | 9.603778e-03
+          'Brigham Young' | 9.563631e-03
+       'Nevada Las Vegas' | 9.516293e-03
+             'Penn State' | 9.514888e-03
+               'Oklahoma' | 9.502502e-03
+    'Southern California' | 9.475775e-03
+                     Time | 0.1 sec
+
+       Graph | 'lovrosubelj'
+        Type | 'x==y'
+       Nodes | 11,053 (0)
+       Edges | 11,838 (0)
+      Degree | 2.1420
+   Component | 100.0% (1)
+        Time | 0.0 sec
+
+                     Node | Degrees
+        'toningumichefu1' | 1.779607e-01
+                 'jeyjey' | 1.421334e-01
+                  '_mark' | 8.784945e-02
+              'AmarDhand' | 8.404958e-02
+               'Comsotec' | 7.997829e-02
+           'NatalieOlivo' | 7.319280e-02
+                'janbuc8' | 6.649778e-02
+              'Reventis4' | 5.546006e-02
+           'comando_show' | 4.776984e-02
+             'antoineG1K' | 4.017009e-02
+                     Time | 0.0 sec
+
+                     Node | Eigenvectors
+        'toningumichefu1' | 1.466150e-02
+                 'jeyjey' | 5.737675e-03
+                'R_LGBTQ' | 2.198150e-03
+             'antoineG1K' | 2.018587e-03
+                'janbuc8' | 1.974413e-03
+           'DataActivism' | 1.754200e-03
+           'somentelucas' | 1.336595e-03
+           'comando_show' | 1.234327e-03
+              'Reventis4' | 8.379601e-04
+                 'keschh' | 6.109130e-04
+                     Time | 0.8 sec
+
+                     Node | PageRanks
+        'toningumichefu1' | 7.435419e-02
+                 'jeyjey' | 6.081444e-02
+                  '_mark' | 3.989038e-02
+              'AmarDhand' | 3.685383e-02
+               'Comsotec' | 3.455250e-02
+           'NatalieOlivo' | 3.312465e-02
+                'janbuc8' | 2.848928e-02
+              'Reventis4' | 2.522576e-02
+           'comando_show' | 2.069317e-02
+              'squazzoni' | 1.631601e-02
+                     Time | 3.1 sec
+
+       Graph | 'imdb'
+        Type | 'x--y'
+       Nodes | 17,577 (0)
+       Edges | 287,074 (0)
+      Degree | 32.6647
+   Component | 99.3% (19)
+        Time | 0.3 sec
+
+                     Node | Degrees
+        'Davis, Mark (V)' | 4.460374e-02
+      'Sanders, Alex (I)' | 3.470444e-02
+       'North, Peter (I)' | 3.407863e-02
+            'Marcus, Mr.' | 3.322524e-02
+         'Tedeschi, Tony' | 3.191671e-02
+             'Dough, Jon' | 3.157535e-02
+        'Stone, Lee (II)' | 3.100643e-02
+          'Voyeur, Vince' | 3.032372e-02
+    'Lawrence, Joel (II)' | 2.844627e-02
+      'Steele, Lexington' | 2.804802e-02
+                     Time | 0.0 sec
+
+                     Node | Eigenvectors
+      'Benoit, Chris (I)' | 4.976578e-03
+        'Guerrero, Eddie' | 4.976578e-03
+           'Storm, Lance' | 4.953181e-03
+            'Wight, Paul' | 4.948015e-03
+         'Jericho, Chris' | 4.947105e-03
+        'Runnels, Dustin' | 4.924304e-03
+             'Flair, Ric' | 4.921085e-03
+        'Huffman, Booker' | 4.917470e-03
+         'Bischoff, Eric' | 4.911495e-03
+         'Wilson, Torrie' | 4.911042e-03
+                     Time | 11.6 sec
+
+                     Node | PageRanks
+             'Hanks, Tom' | 6.599467e-04
+     'Jackson, Samuel L.' | 6.424015e-04
+       'Goldberg, Whoopi' | 6.066487e-04
+           'Stiller, Ben' | 5.607647e-04
+        'Davis, Mark (V)' | 5.473117e-04
+    'Lopez, Jennifer (I)' | 5.423402e-04
+     'Berl�and, Fran�ois' | 5.399206e-04
+           'Berry, Halle' | 5.362624e-04
+          'Diaz, Cameron' | 5.143424e-04
+         'Travolta, John' | 4.863950e-04
+                     Time | 46.0 sec
+
+       Graph | 'got_kills'
+        Type | 'x==y'
+       Nodes | 304 (0)
+       Edges | 250 (61)
+      Degree | 1.6447
+   Component | 6.6% (115)
+        Time | 0.0 sec
+
+                     Node | Degrees
+               'Jon Snow' | 3.947368e-02
+             'Arya Stark' | 3.618421e-02
+         'Sandor Clegane' | 3.289474e-02
+          'Ramsay Bolton' | 2.631579e-02
+     'Daenerys Targaryen' | 2.302632e-02
+         'Daario Naharis' | 1.973684e-02
+                 'Cersei' | 1.973684e-02
+                'Brienne' | 1.644737e-02
+                'Ygritte' | 1.644737e-02
+              'Ned Stark' | 1.315789e-02
+                     Time | 0.0 sec
+
+                     Node | Eigenvectors
+        'The High Septon' | 9.978631e-01
+               'Jon Snow' | 4.199160e-04
+'White Walker Lieutenant' | 2.517334e-04
+                   'Olly' | 1.282278e-04
+            'Karl Tanner' | 1.238866e-04
+                   'Styr' | 1.238866e-04
+        'Qhorin Halfhand' | 1.146914e-04
+                  'Orell' | 1.146914e-04
+      'King Mance Rayder' | 1.146914e-04
+       'Lord Janos Slynt' | 1.146914e-04
+                     Time | 0.0 sec
+
+                     Node | PageRanks
+               'Jon Snow' | 1.782920e-02
+             'Arya Stark' | 1.770442e-02
+         'Sandor Clegane' | 1.560549e-02
+          'Ramsay Bolton' | 1.297344e-02
+     'Daenerys Targaryen' | 1.165836e-02
+         'Daario Naharis' | 1.084637e-02
+                 'Cersei' | 1.084637e-02
+                'Brienne' | 9.334992e-03
+                'Ygritte' | 8.341643e-03
+              'Ned Stark' | 7.823613e-03
+                     Time | 0.1 sec
+
