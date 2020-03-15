@@ -8,10 +8,10 @@ def DC(G):
   Compute degree centrality of nodes in a graph represented by class Graph.
   Function returns a list of degree centralities of each node represented by its index.
   """
-  DCs = [0.0] * G.get_n()
+  DCs = [0] * G.get_n() # degree centralities
   
   for i in G.get_nodes():
-    DCs[i] = G.get_degree(i) / G.get_n()
+    DCs[i] = G.get_degree(i) / (G.get_n() - 1)
   
   return DCs
 
@@ -20,36 +20,63 @@ def EC(G):
   Compute eigenvector centrality of nodes in a graph represented by class Graph.
   Function returns a list of eigenvector centralities of each node represented by its index.
   """
-  ECs = [1.0 / G.get_n()] * G.get_n()
+  ECs = [1 / G.get_n()] * G.get_n() # eigenvector centralities
   
   for _ in range(100):
-    nECs = [0.0] * G.get_n()
+    nECs = [0] * G.get_n() # new/updated centralities
+    
     for i in G.get_nodes():
       for j in G.get_neighbours(i):
         nECs[i] += ECs[j]
   
     sEC = sum(nECs)
-    ECs = [ec / sEC for ec in nECs]
+    ECs = [ec / sEC for ec in nECs] # normalized centralities
     
   return ECs
 
+def C(G, i):
+  """
+  Compute closeness centrality of given node in a graph represented by class Graph.
+  Function returns the closeness centrality of given node represented by its index.
+  """
+  D = [0] * G.get_n() # node distances
+  
+  Q = [i] # queue of nodes
+  while Q:
+    i = Q.pop(0)
+    
+    for j in G.get_neighbours(i):
+      if i != j and D[j] == 0:
+        D[j] = D[i] + 1 # computing distances
+        Q.append(j)
+
+  return sum([1 / d if d > 0 else 0 for d in D]) / (G.get_n() - 1) # closeness centrality
+
+def CC(G):
+  """
+  Compute closeness centrality of nodes in a graph represented by class Graph.
+  Function returns a list of closeness centralities of each node represented by its index.
+  """
+  return [C(G, i) for i in G.get_nodes()] # closeness centralities
+
 def PR(G, alpha = 0.85):
   """
-  Compute PageRank centrality of nodes in a graph represented by class Graph.
-  Function returns a list of PageRank centralities of each node represented by its index.
+  Compute PageRank score of nodes in a graph represented by class Graph.
+  Function returns a list of PageRank scores of each node represented by its index.
   """
-  PRs = [1.0 / G.get_n()] * G.get_n()
+  PRs = [1 / G.get_n()] * G.get_n() # PageRank scores
   
   nodes = G.get_nodes()
   for _ in range(100):
-    nPRs = [0.0] * G.get_n()
+    nPRs = [0] * G.get_n() # new/updated scores
+    
     shuffle(nodes)
     for i in nodes:
       for j in G.get_neighbours(i):
         nPRs[i] += PRs[j] * alpha / G.get_degree(j)
   
     sPR = sum(nPRs)
-    PRs = [pr + (1.0 - sPR) / G.get_n() for pr in nPRs]
+    PRs = [pr + (1 - sPR) / G.get_n() for pr in nPRs] # normalized scores
 
   return PRs
 
@@ -76,14 +103,14 @@ def analysis(G):
 
   tops(G, lambda G: DC(G), 'Degrees')
   tops(G, lambda G: EC(G), 'Eigenvectors')
+  tops(G, lambda G: CC(G), 'Closenesses')
   tops(G, lambda G: PR(G), 'PageRanks')
 
-# analyzes node centralities of various real networks
+# analyzes node centralities of different real networks
 
-analysis(Graph.read('dolphins'))
-analysis(Graph.read('football'))
-analysis(Graph.read('lovrosubelj'))
-analysis(Graph.read('imdb'))
+analysis(Graph.read('bottlenose_dolphins'))
+analysis(Graph.read('lovro_subelj'))
+analysis(Graph.read('imdb_actors'))
 
 # parses GoT kills network from online source
 
