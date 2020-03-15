@@ -1,4 +1,4 @@
-       Graph | 'imdb'
+       Graph | 'imdb_actors'
         Type | 'x--y'
        Nodes | 17,577 (0)
        Edges | 287,074 (0)
@@ -17,7 +17,7 @@
             'Cruise, Tom' | 2.144666e-03
  'Schwarzenegger, Arnold' | 2.113280e-03
         'Myers, Mike (I)' | 2.107864e-03
-                     Time | 46.2 sec
+                     Time | 50.1 sec
 
                      Node | Like 'Marcus, Mr.'
             'Marcus, Mr.' | 1.548125e-01
@@ -30,5 +30,5 @@
          'Tedeschi, Tony' | 3.334183e-03
         'Stone, Lee (II)' | 3.219347e-03
     'Lawrence, Joel (II)' | 3.051527e-03
-                     Time | 43.7 sec
+                     Time | 50.0 sec
 
