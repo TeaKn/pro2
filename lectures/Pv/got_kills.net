@@ -1,0 +1,556 @@
+*vertices 304
+1 "Waymar Royce"
+2 "Gared"
+3 "Will"
+4 "Ned Stark"
+5 "Lord Jon Arryn"
+6 "Catspaw assassin"
+7 "Summer"
+8 "Mycah"
+9 "Sandor Clegane"
+10 "Lady"
+11 "Ser Hugh of the Vale"
+12 "Kurleket"
+13 "Hill Tribesmen"
+14 "Ser Willis Wode"
+15 "Wyl"
+16 "Lannister Soldiers"
+17 "Heward"
+18 "Jory Cassel"
+19 "Jaime Lannister"
+20 "Wallen"
+21 "Robb Stark"
+22 "Stiv"
+23 "Theon Greyjoy"
+24 "Ser Vardis Egen"
+25 "Bronn"
+26 "Prince Viserys Targaryen"
+27 "Khal Drogo"
+28 "King Robert Baratheon"
+29 "Lancel Lannister"
+30 "Varly"
+31 "Goldcloaks"
+32 "Vayon Poole"
+33 "Syrio Forel"
+34 "Meryn Trant"
+35 "Stableboy"
+36 "Arya Stark"
+37 "Jafer Flowers"
+38 "White Walkers"
+39 "Othor"
+40 "Mago"
+41 "Qotho"
+42 "Jorah Mormont"
+43 "Lord Eddard Ned Stark"
+44 "Ser Ilyn Payne"
+45 "Rhaego"
+46 "Mirri Maz Duur"
+47 "Daenerys Targaryen"
+48 "Master Cressen"
+49 "Barra"
+50 "Janos Slynt"
+51 "Rakharo"
+52 "Yoren"
+53 "Amory Loch"
+54 "Lommy Greenhands"
+55 "Polliver"
+56 "Rennick"
+57 "Grey Wind"
+58 "Lannister Guard"
+59 "Tortured Prisoner"
+60 "Stafford Lannister"
+61 "Stark Soldiers"
+62 "King Renly Baratheon"
+63 "Melisandre"
+64 "Emmon Cuy"
+65 "Brienne"
+66 "Robar Royce"
+67 "The Tickler"
+68 "Jaqen"
+69 "Ser Rodrik Cassel"
+70 "The High Septon"
+71 "Ser Amory Lorch"
+72 "Drennan"
+73 "Osha"
+74 "Irri"
+75 "Doreah"
+76 "Ser Alton Lannister"
+77 "The Spice King"
+78 "Pyat Pree"
+79 "The Silk King"
+80 "The Copper King"
+81 "Winterfell Shepard"
+82 "Dagmer"
+83 "Billy"
+84 "Jack"
+85 "Borba"
+86 "Harker"
+87 "Stonesnake"
+88 "Matthos Seaworth"
+89 "Ser Mandon Moore"
+90 "Podrick Payne"
+91 "Tom"
+92 "Maester Luwin"
+93 "Lorren"
+94 "Ramsay Bolton"
+95 "Drogon"
+96 "Qhorin Halfhand"
+97 "Jon Snow"
+98 "Xaro Xhoan Daxos"
+99 "Ser Jaremy Mallister"
+100 "Gregor Clegane"
+101 "Hoster Tully"
+102 "Master Torturer"
+103 "Bannen"
+104 "Craster"
+105 "Karl Tanner"
+106 "Lord Commander Jeor Mormont"
+107 "Rast"
+108 "Kraznys mo Nakloz"
+109 "Greizhen mo Ullhor"
+110 "Lord Beric Dondarrion"
+111 "Willem Lannister"
+112 "Rickard Karstark"
+113 "Martyn Lannister"
+114 "Lord Rickard Karstark"
+115 "Rob Stark"
+116 "Ros"
+117 "Joffrey Baratheon"
+118 "Mero"
+119 "Daario Naharis"
+120 "Prendahl na Ghezn"
+121 "White Walker"
+122 "Old Man"
+123 "Ygritte"
+124 "Orell"
+125 "Queen Talisa Stark"
+126 "Lothar Frey"
+127 "Wendel Manderly"
+128 "Walder Frey"
+129 "King Robb Stark"
+130 "Roose Bolton"
+131 "Lady Joyeuse Erenford"
+132 "Catelyn Stark"
+133 "Lady Catelyn Stark"
+134 "Black Walder Rivers"
+135 "Several Frey Soldiers"
+136 "Lowell"
+137 "Tansy"
+138 "Ramsay"
+139 "Ser Axell Florent"
+140 "King Joffrey Baratheon"
+141 "Lady Olenna Tyrell"
+142 "Ser Dontos Hollard"
+143 "Petyr Baelish"
+144 "Guymon"
+145 "Olly's Mother"
+146 "Styr"
+147 "Oznak zo Pahl"
+148 "Great Masters"
+149 "Locke"
+150 "Bran Stark"
+151 "Ghost"
+152 "Dying Man"
+153 "Biter"
+154 "Rorge"
+155 "Lady Lysa Arryn"
+156 "Kegs"
+157 "Black Jack Bulwer"
+158 "Mully"
+159 "Mole's Town Whore"
+160 "Ralf Kenning"
+161 "Adrack Humble"
+162 "Bolton Soldiers"
+163 "Prince Oberyn Martell"
+164 "Ser Gregor Clegane"
+165 "Pypar"
+166 "Thenn Warg"
+167 "Samwell Tarly"
+168 "Dongo"
+169 "Smitty"
+170 "Olly"
+171 "Grenn"
+172 "Mag Mar Tun Doh Weg"
+173 "Cooper"
+174 "Donnel Hill"
+175 "Gren"
+176 "Zalla"
+177 "Jojen Reed"
+178 "Meera Reed"
+179 "Shae"
+180 "Tyrion Lannister"
+181 "Lord Tywin Lannister"
+182 "White Rat"
+183 "King Mance Rayder"
+184 "Mossador"
+185 "Lord Medgar Cerwyn"
+186 "Lady Cerwyn"
+187 "Lord Janos Slynt"
+188 "Merchant Captain"
+189 "Obara Sand"
+190 "Ser Barristan Selmy"
+191 "Master Eaton"
+192 "Viserion"
+193 "Ghita"
+194 "Maester Aemon"
+195 "Lord of Bones"
+196 "Tormund"
+197 "Loboda"
+198 "White Walker Lieutenant"
+199 "Karsi"
+200 "Princess Shireen Baratheon"
+201 "Water Dancer"
+202 "Meereenese champion"
+203 "Hizdahr zo Loraq"
+204 "Queen Selyse Baratheon"
+205 "Gordy"
+206 "Stannis Baratheon"
+207 "Simpson"
+208 "King Stannis Baratheon"
+209 "Myranda"
+210 "Ser Meryn Trant"
+211 "Princess Myrcella Baratheon"
+212 "Ellaria Sand"
+213 "Lord Commander Jon Snow"
+214 "Alliser Thorne"
+215 "Bolton Officer"
+216 "Areo Hotah"
+217 "Tyene Sand"
+218 "Prince Doran Martell"
+219 "Maester Caleotte"
+220 "Prince Trystane Martell"
+221 "Lord Roose Bolton"
+222 "Lady Walda Bolton"
+223 "Bolton Son"
+224 "King Balon Greyjoy"
+225 "Ser Gerold Hightower "
+226 "Four Stark Bannermen "
+227 "Arthur Dayne"
+228 "Ser Arthur Dayne "
+229 "Lord Greatjon Umber"
+230 "Shaggydog"
+231 "Jon Umber"
+232 "First Steward Bowen Marsh"
+233 "First Builder Othell Yarwyck"
+234 "Ser Alliser Thorne"
+235 "Iggo"
+236 "Akho"
+237 "Khal Rhalko"
+238 "Khal Brozho"
+239 "Khal Qorro"
+240 "Khal Forzho"
+241 "Khal Moro"
+242 "Three Eyed Raven"
+243 "Leaf"
+244 "Hodor"
+245 "King Aerys Targaryen "
+246 "Brother Ray"
+247 "Lem"
+248 "Steve"
+249 "Riddell"
+250 "Gatins"
+251 "Morgan"
+252 "Ser Brynden Tully"
+253 "Lem Lemoncloak"
+254 "Lady Crane"
+255 "The Waif"
+256 "Belicho Paenymion"
+257 "Grey Worm"
+258 "Razdal mo Eraz"
+259 "Prince Rickon Stark"
+260 "Lord Jon Umber"
+261 "Wun Weg Wun Dar Wun"
+262 "Lord Ramsay Bolton"
+263 "Sansa Stark"
+264 "Grand Maester Pycelle"
+265 "Qyburn"
+266 "Ser Lancel Lannister"
+267 "Cersei"
+268 "The High Sparrow"
+269 "Ser Loras Tyrell"
+270 "Queen Margaery Tyrell"
+271 "Lord Mace Tyrell"
+272 "Ser Kevan Lannister"
+273 "King Tommen Baratheon"
+274 "Lord Walder Frey"
+275 "Lady Lyanna Stark "
+276 "Sally - Stabbed by her father with a dagger in a mercy killing due to starvation."
+277 "Mortimer "
+278 "Euron Greyjoy"
+279 "Nymeria Sand"
+280 "Queen Cersei Lannister"
+281 "Olenna Tyrell"
+282 "Dickon Tarly"
+283 "Benjen Stark"
+284 "Wights"
+285 "Lord Ned Umber"
+286 "Qhono"
+287 "Eddison Tollett"
+288 "Lady Lyanna Mormont"
+289 "Lady Alys Karstark"
+290 "Lord Theon Greyjoy"
+291 "Night King"
+292 "Ser Jorah Mormont"
+293 "Lady Melisandre"
+294 "Rhaegal"
+295 "Harry Strickland"
+296 "Ser Boros Blount"
+297 "Ser Preston Greenfield"
+298 "Ser Arys Oakheart"
+299 "Ser Balon Swann"
+300 "Ser Osmund Kettleblack"
+301 "Nora"
+302 "Septa Unella"
+303 "Bernadette"
+304 "Queen Daenerys Targaryen"
+*edges 250
+3 4
+4 10
+4 225
+4 228
+6 7
+8 9
+9 110
+9 136
+9 152
+9 153
+9 248
+9 249
+9 250
+9 251
+9 253
+12 13
+13 14
+15 16
+16 17
+16 32
+18 19
+19 76
+19 245
+19 281
+20 21
+22 23
+23 69
+23 209
+24 25
+25 88
+26 27
+27 40
+27 47
+28 29
+30 31
+33 34
+35 36
+36 135
+36 55
+36 154
+36 193
+36 210
+36 255
+36 126
+36 134
+36 274
+36 291
+37 38
+38 39
+41 42
+42 75
+42 98
+42 202
+43 44
+45 46
+46 47
+47 237
+47 238
+47 239
+47 240
+47 241
+49 50
+52 53
+54 55
+56 57
+57 58
+57 128
+60 61
+62 63
+63 139
+63 200
+64 65
+65 66
+65 91
+65 208
+65 215
+67 68
+68 71
+72 73
+73 92
+73 94
+74 75
+77 78
+78 79
+78 80
+78 95
+81 82
+82 83
+82 84
+82 94
+89 90
+93 94
+94 102
+94 185
+94 186
+94 259
+94 261
+95 108
+95 176
+95 301
+96 97
+97 124
+97 105
+97 146
+97 183
+97 187
+97 232
+97 233
+97 234
+97 170
+97 198
+97 304
+99 100
+104 105
+106 107
+107 151
+111 112
+112 113
+114 115
+116 117
+118 119
+119 120
+119 147
+119 184
+119 235
+119 236
+121 178
+122 123
+123 144
+123 159
+123 165
+123 170
+125 126
+127 128
+129 130
+131 132
+133 134
+137 138
+138 222
+138 223
+140 141
+142 143
+143 155
+145 146
+149 150
+160 161
+161 162
+163 164
+166 167
+171 172
+172 173
+172 174
+172 175
+177 178
+179 180
+180 181
+188 189
+189 220
+189 278
+191 192
+195 196
+196 260
+205 206
+206 207
+211 212
+212 218
+213 214
+216 217
+217 219
+217 280
+226 227
+230 231
+246 247
+256 257
+257 258
+257 295
+262 263
+264 265
+266 267
+267 268
+267 269
+267 270
+267 271
+267 272
+278 279
+278 294
+283 284
+284 286
+284 292
+1 1
+2 2
+5 5
+7 7
+11 11
+44 44
+48 48
+51 51
+59 59
+70 70
+70 70
+85 85
+86 86
+87 87
+101 101
+103 103
+109 109
+110 110
+121 121
+148 148
+156 156
+157 157
+158 158
+168 168
+169 169
+182 182
+190 190
+194 194
+197 197
+198 198
+199 199
+201 201
+203 203
+204 204
+212 212
+221 221
+224 224
+229 229
+242 242
+243 243
+244 244
+252 252
+254 254
+273 273
+275 275
+276 276
+277 277
+282 282
+285 285
+287 287
+288 288
+289 289
+290 290
+293 293
+296 296
+297 297
+298 298
+299 299
+300 300
+302 302
+303 303
