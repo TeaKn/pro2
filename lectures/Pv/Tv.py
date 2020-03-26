@@ -2,7 +2,7 @@ import operator as op
 
 def edit_distance(fst, snd):
   """
-  Compute the Levenshtein or edit distance between the given two strings.
+  Compute Levenshtein or edit distance between given two strings.
   Function returns number of operations needed to traverse one string to another.
   """
   distances = [[0 for _ in range(len(snd) + 1)] for _ in range(len(fst) + 1)]
@@ -14,10 +14,7 @@ def edit_distance(fst, snd):
 
   for j in range(1, len(snd) + 1):
     for i in range(1, len(fst) + 1):
-      if fst[i - 1] == snd[j - 1]:
-        distances[i][j] = distances[i - 1][j - 1]
-      else:
-        distances[i][j] = min(distances[i - 1][j - 1], distances[i - 1][j], distances[i][j - 1]) + 1
+      distances[i][j] = min(distances[i - 1][j - 1] if fst[i - 1] == snd[j - 1] else distances[i - 1][j - 1] + 1, distances[i - 1][j] + 1, distances[i][j - 1] + 1)
 
   return distances[len(fst)][len(snd)]
 
