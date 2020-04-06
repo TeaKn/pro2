@@ -141,7 +141,7 @@ regressors = {"LR": linear_model.LinearRegression(), "SGD": linear_model.SGDRegr
 
 # computes MAPE of regressors using K-fold temporal validation
 
-FOLD = 7
+FOLD = 7 * 24
 
 MAPEs = {}
 for name, regressor in regressors.items():
