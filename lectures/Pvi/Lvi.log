@@ -1,15 +1,15 @@
 
   Classifier | Accuracy
        'kNN' |  98.55%
-      'Tree' |  84.92%
-    'Forest' |  97.05%
+      'Tree' |  85.53%
+    'Forest' |  97.22%
        'SVM' |  98.89%
-       'MLP' |  97.72%
+       'MLP' |  97.49%
 
    Regressor |  MAPE
-        'LR' | 19.49%
-       'SGD' | 19.63%
-       'kNN' |  9.68%
-      'Tree' |  7.93%
-       'SVM' | 15.92%
+        'LR' | 20.07%
+       'SGD' | 20.10%
+       'kNN' | 19.64%
+      'Tree' | 22.71%
+       'SVM' | 18.56%
 

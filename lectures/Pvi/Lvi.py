@@ -148,13 +148,17 @@ for name, regressor in regressors.items():
   MAPEs[name] = 0
 
   for k in range(1, K + 1):
-    train_instances = instances[:-K * FOLD]
-    train_values = values[:-K * FOLD]
+    train_instances = instances[:-k * FOLD]
+    train_values = values[:-k * FOLD]
 
     regressor.fit(train_instances, train_values)
     
-    test_instances = instances[-K * FOLD:-(K - 1) * FOLD]
-    test_values = values[-K * FOLD:-(K - 1) * FOLD]
+    if k == 1:
+      test_instances = instances[-FOLD:]
+      test_values = values[-FOLD:]
+    else:
+      test_instances = instances[-k * FOLD:-(k - 1) * FOLD]
+      test_values = values[-k * FOLD:-(k - 1) * FOLD]
 
     test_predicts = regressor.predict(test_instances)
 
