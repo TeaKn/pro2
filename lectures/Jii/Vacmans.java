@@ -114,9 +114,10 @@ public class Vacmans extends Pacmans {
         Thread.sleep(PLAY_SLEEP_TIME);
         
         update();
+        draw();
       }
       
-      draw();
+      Thread.sleep(100);
     }
   }
 
